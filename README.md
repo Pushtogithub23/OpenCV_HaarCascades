@@ -104,7 +104,7 @@ This function detects both faces and eyes in a given image.
 - Implements nested detection (eyes within faces).
 - Uses custom `draw_rounded_rect` function for aesthetically pleasing face bounding boxes.
 
-In some cases, it may mistakenly identify other facial features as eyes in the image. To ensure that we only detect and draw bounding boxes around the eyes, and not other facial regions such as lips or eyebrows, we can filter the detected eye regions based on their relative vertical positions. Specifically, if the centres of two detected eye-bounding boxes are within a specified vertical range (e.g., ±50 pixels), we can confirm that they are likely to be eyes.
+In some cases, it may mistakenly identify other facial features as eyes in the image. To ensure that we only detect and draw bounding boxes around the eyes, and not other facial regions such as lips, we can filter the detected eye regions based on their relative vertical positions. Specifically, if the centres of two detected eye-bounding boxes are within a specified vertical range (e.g., ±50 pixels), we can confirm that they are likely to be eyes.
 
 ![katherine_eye_1](https://github.com/user-attachments/assets/58e87210-5d64-43a4-9e84-56c12511e7a4)
 
